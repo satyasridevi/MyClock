@@ -1,0 +1,48 @@
+<!dOCTYPE html>
+  <html>
+  <head>
+    <link rel="stylesheet" type="text/css" media="screen" href="myclock.css">
+    <script src="myclock.js"></script>
+  </head>
+  <body id="body" style="text-align:center;">
+    <h1 style="color:blueviolet;">
+      MyClock
+    </h1>
+    <div id="MyClockDisplay" class="clock">
+      <script>
+        showTime();
+      </script>
+    </div>
+    <div id="MyClockDisplay24" class="clock">
+      <script>
+        showTime24();
+      </script>
+    </div>
+    <form>
+      <label for="fname">wakeup:</label>
+      <select id="time1" value="wake" onchange="myfunction()"> 
+        <option value="05-06">5-6</option>
+        <option value="06-07">6-7</option>
+        <option value="07-08">7-8</option>
+        <option value="08-09">8-9</option>
+      </select>
+      <label for="fname">lunch:</label>
+      <select id="time2" value="lunch" onchange="myfunction()">
+        <option value="11-12">11-12</option>
+        <option value="12-13">12-13</option>
+        <option value="13-14">13-14</option>
+        <option value="14-15">14-15</option>
+      </select>
+      <label for="fname">sleep:</label>
+      <select id="time3" value="sleep" onchange="myfunction()">
+        <option value="20-21">20-21</option>
+        <option value="21-22">21-22</option>
+        <option value="22-23">22-23</option>
+        <option value="23-00">23-0</option>
+      </select>
+    </form>
+    <img id="default" src="default.jpg"/>
+    <input type="button" id = "partytime" value="partytime" onclick="partyImage()"/>
+  </body>
+
+  </html>
